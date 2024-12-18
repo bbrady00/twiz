@@ -38,6 +38,6 @@ This is a full-stack application that integrates a React frontend with a Node.js
 ### Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone "https://github.com/bbrady00/twiz"
+cd twiz
 ```
