@@ -90,7 +90,7 @@ The frontend will run on `http://localhost:5173`.
 
 ### Backend
 
-`server/
+```server/
 ├── config/
 │   └── db.js                # MongoDB connection configuration
 ├── middleware/
@@ -102,11 +102,11 @@ The frontend will run on `http://localhost:5173`.
 ├── server.js                # Main backend server file
 ├── .env                     # Backend environment variables
 └── package.json             # Backend dependencies and scripts
-`
+```
 
 ### Frontend
 
-`client/
+```client/
 ├── src/
 │   ├── components/          # React components
 │   ├── pages/               # Application pages
@@ -117,20 +117,20 @@ The frontend will run on `http://localhost:5173`.
 ├── .env                     # Frontend environment variables
 ├── .eslint.config.js        # Custom eslint styling
 └── package.json             # Frontend dependencies and scripts
-`
+```
 
 ### Development
 
 ## Run Backend:
 
-`cd server
-npm start`
+````cd server
+npm start```
 
 ## Run Frontend:
 
-`cd client
+```cd client
 npm run dev
-`
+````
 
 ### Deployment
 
