@@ -44,15 +44,15 @@ cd twiz
 
 ## Backend Setup
 
-1. ## Navigate to the backend directory:
+1. ### Navigate to the backend directory:
 
    `cd server`
 
-2. ## Install dependencies:
+2. ### Install dependencies:
 
    `npm install`
 
-3. ## Create a `.env` file in the backend depository with the following variables:
+3. ### Create a `.env` file in the backend depository with the following variables:
 
 ```PORT=5000
 MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<database>
@@ -62,26 +62,26 @@ SHOPIFY_ACCESS_TOKEN=<your_shopify_store_access_token>
 SHOPIFY_STORE_NAME=<your_shopify_store_name>
 ```
 
-4. ## Start the server:
+4. ### Start the server:
    `npm start`
 
 The backend will run on `http://localhost:5000`.
 
 ## Frontend Setup
 
-1. ## Navigate to the frontend directory:
+1. ### Navigate to the frontend directory:
 
    `cd client`
 
-2. ## Install dependencies:
+2. ### Install dependencies:
 
    `npm install`
 
-3. ## Create a `.env` file in the frontend depository with the following variables:
+3. ### Create a `.env` file in the frontend depository with the following variables:
 
    `VITE_API_URL=http://localhost:5000`
 
-4. ## Start the development server:
+4. ### Start the development server:
    `npm run dev`
 
 The frontend will run on `http://localhost:5173`.
@@ -119,24 +119,24 @@ The frontend will run on `http://localhost:5173`.
 └── package.json             # Frontend dependencies and scripts
 ```
 
-### Development
+## Development
 
-## Run Backend:
+### Run Backend:
 
-````cd server
-npm start```
+`cd server
+npm start`
 
-## Run Frontend:
+### Run Frontend:
 
-```cd client
+`cd client
 npm run dev
-````
+`
 
-### Deployment
+## Deployment
 
-1. /*/*Backend:
+1. ### Backend:
    Use services like Heroku, Vercel, or AWS.
    Ensure MongoDB and Shopify credentials are securely stored.
-2. /*/*Frontend:
+2. ### Frontend:
    Deploy the React app on Netlify, Vercel, or similar platforms.
    Update the VITE_API_URL in the .env file to point to the deployed backend.
