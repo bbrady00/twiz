@@ -1,25 +1,43 @@
-# Freelance Web Development Business
+# Full-Stack Shopify Integration with React and MongoDB
 
-Welcome to the repository for my freelance web development business. This website showcases my services, portfolio, and provides contact information.
+This is a full-stack application that integrates a React frontend with a Node.js/Express backend, connecting to Shopify's Admin API and MongoDB for data management. The application allows users to interact with Shopify data (e.g., products, orders) and displays the data dynamically on the frontend.
 
-## Pages
+---
 
-- **Home**: A welcoming page that provides an overview of the business.
-- **About**: Information about the developer and the business approach.
-- **Portfolio**: A showcase of previous work and projects.
-- **Contact**: A form to get in touch with the developer.
-- **Services**: Details about the services provided.
+## Features
 
-### Legal Pages
+- **Frontend**:
 
-- **Terms**: Terms and conditions for using the website.
-- **Privacy**: Privacy policy outlining data collection and security.
+  - Built with React for a modern, responsive UI.
+  - Fetches Shopify data and displays it dynamically.
+  - Styled for user-friendly interaction.
+
+- **Backend**:
+  - Node.js/Express for server-side logic.
+  - Integration with Shopify Admin API for e-commerce functionality.
+  - MongoDB with Mongoose for data storage and management.
+
+---
+
+## Prerequisites
+
+- **Frontend**:
+
+  - Node.js (v14 or higher)
+  - React (created using Vite or Create React App)
+
+- **Backend**:
+  - Node.js (v14 or higher)
+  - MongoDB (local or cloud)
+  - Shopify Partner account with Admin API credentials
+
+---
 
 ## Installation
 
-To run this project locally, follow these steps:
+### Clone the Repository
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/bbrady00/bit-brilliant.git
-   ```
+```bash
+git clone <repository-url>
+cd <repository-folder>
+```
