@@ -146,4 +146,4 @@ npm run dev
 
 ## Live Site
 
-Check out a live running example of this website here[TBC]
+Check out a live running example of this website here [TBC](TBC).
