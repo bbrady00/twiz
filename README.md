@@ -135,8 +135,15 @@ npm run dev
 ## Deployment
 
 1. ### Backend:
+
    Use services like Heroku, Vercel, or AWS.
    Ensure MongoDB and Shopify credentials are securely stored.
+
 2. ### Frontend:
+
    Deploy the React app on Netlify, Vercel, or similar platforms.
-   Update the VITE_API_URL in the .env file to point to the deployed backend.
+   Update the `VITE_API_URL` in the `.env` file to point to the deployed backend.
+
+## Live Site
+
+Check out a live running example of this website here[TBC]
