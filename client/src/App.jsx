@@ -16,7 +16,7 @@ import "./assets/styles/app.css";
 
 const App = () => {
   return (
-    <Router basename="/bitbrilliant">
+    <Router basename="/twiz">
       <div className="App">
         <Navbar />
         <Routes>

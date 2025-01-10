@@ -8,13 +8,15 @@ const errorHandler = require("./middleware/errorHandler");
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 6001;
 
 // Ensure required environment variables exist
 if (
   !process.env.MONGO_URI ||
   !process.env.SHOPIFY_STORE ||
-  !process.env.SHOPIFY_ADMIN_API_KEY
+  !process.env.SHOPIFY_API_KEY ||
+  !process.env.SHOPIFY_API_SECRET ||
+  !process.env.SHOPIFY_ACCESS_TOKEN
 ) {
   console.error("Missing required environment variables.");
   process.exit(1);
@@ -42,7 +44,7 @@ const fetchShopifyProducts = async () => {
     const shopifyURL = `https://${process.env.SHOPIFY_STORE}/admin/api/2023-01/products.json`;
     const response = await axios.get(shopifyURL, {
       headers: {
-        "X-Shopify-Access-Token": process.env.SHOPIFY_ADMIN_API_KEY,
+        "X-Shopify-Access-Token": process.env.SHOPIFY_ACCESS_TOKEN,
       },
     });
     return response.data.products;
@@ -63,12 +65,10 @@ app.get("/api/shopify/products", async (req, res) => {
     const products = await fetchShopifyProducts();
     res.status(200).json(products);
   } catch (error) {
-    res
-      .status(500)
-      .json({
-        message: "Failed to fetch Shopify products",
-        error: error.message,
-      });
+    res.status(500).json({
+      message: "Failed to fetch Shopify products",
+      error: error.message,
+    });
   }
 });
 

@@ -3,7 +3,7 @@ import "../../assets/styles/footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <section className="footer">
       <div className="footer-content">
         <p>&copy; {new Date().getFullYear()} Twiz. All rights reserved.</p>
         <nav>
@@ -20,7 +20,7 @@ const Footer = () => {
           </ul>
         </nav>
       </div>
-    </footer>
+    </section>
   );
 };
 

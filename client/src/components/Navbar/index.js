@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <section className="navbar">
       <div className="logo">
         <h1>Your Logo</h1>
       </div>
@@ -33,7 +33,7 @@ const Navbar = () => {
         <span className="line"></span>
         <span className="line"></span>
       </div>
-    </nav>
+    </section>
   );
 };
 
